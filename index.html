@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> 
+    body {
+  font-family: 'Merriweather', serif;
+  background: white;
+  color: white;
+  text-align: center;
+  background-color:black;
+}
+button{
+  height: 100px;
+  width: 100px;
+  font-size:2vw;
+  border-radius:30px;
+}
+  div {
+  padding: 50px 50px 45px 50px;
+}
+
+
+    </style>
+</head>
+<body>
+    <h1>  DRUM PAD</h1>
+    <div>
+      <button type="button" onclick="play1()">A</button>
+            <audio id="audio1" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"></audio>
+       <button type="button" onclick="play2()">B</button>
+            <audio id="audio2" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0010.mp3"></audio>
+      <button type="button" onclick="play3()">C</button>
+            <audio id="audio3" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/SD0000.mp3"></audio>
+    </div>
+      <button type="button" onclick="play4()">D</button>
+            <audio id="audio4" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/RS.mp3"></audio>
+      <button type="button" onclick="play5()">E</button>
+            <audio id="audio5" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/OH25.mp3"></audio>
+     <button type="button" onclick="play6()">F</button>
+            <audio id="audio6" src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/MA.mp3"></audio>
+
+</body>
+<script>
+  function play1()
+{
+  var audio = document.getElementById("audio1");
+  audio.play();
+}
+function play2()
+{
+  var audio = document.getElementById("audio2");
+  audio.play();
+}
+function play3()
+{
+  var audio = document.getElementById("audio3");
+  audio.play();
+}
+function play4()
+{
+  var audio = document.getElementById("audio4");
+  audio.play();
+}
+function play5()
+{
+  var audio = document.getElementById("audio5");
+  audio.play();
+}
+function play6()
+{
+  var audio = document.getElementById("audio5");
+  audio.play(); 
+}
+
+
+
+</script>
+</html>
